@@ -1,0 +1,146 @@
+@font-face{
+    font-family: Ashley;
+    src:url(../fonts/AmazinglyBeautifulRegular-YzGR4.ttf);
+}
+@font-face{
+    font-family: Ashley2;
+    src:url(../fonts/Olive\ Days.otf)
+}
+@font-face{
+    font-family: Ashley3;
+    src:url(../fonts/atwriter.ttf)
+}
+
+body{
+    background: repeating-linear-gradient(0deg, rgba(8,124,3,1) 0%, rgba(14,198,16,1) 35%, rgba(219,10,22,1) 100%);
+    color:black;
+    font-family: Ashley;
+    padding:10px;
+
+}
+
+.container{
+    width:80%;
+    margin:25px auto;
+    border:5px double black;
+    border-radius:15px 50px;
+    overflow:auto;
+    padding:15px;
+    box-sizing:border-box;
+    background: url(../images/strawberries.png);
+    background-repeat:repeat;
+}
+.container2{
+    width:80%;
+    margin:25px auto;
+    border: 5px double black;
+    border-radius:15px 50px;
+    overflow:auto;
+    padding:15px;
+    text-align:center;
+    box-sizing:border-box;
+    background:url(../images/strawberries.png);
+    background-repeat:repeat;
+}
+img {
+    width:100%;
+    margin-right:auto;
+    margin-left:auto;
+    /*border:5px double white;
+    border-radius:25px;
+    padding:5px;*/
+}
+
+h1, h2, h3{
+    text-align:center;
+    margin:10px auto;
+}
+h1{
+    font-family: Ashley2;
+    font-weight:bold;
+    font-size:xx-large;
+    color:rgb(4, 4, 4);
+    text-align:center;
+}
+h2{
+    font-family: Ashley;
+    font-weight:bolder;
+    font-size:large;
+    color:rgb(106, 9, 203);
+    text-align:center;
+    text-decoration-line: underline;
+}
+h3{
+    font-family: Ashley2;
+    font-weight:bold;
+    font-size:xx-large;
+    color:rgb(106, 9, 203);
+    text-align:center;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-shadow: 3px 3px 10px rgb(116, 8, 193);
+}
+h4{
+    font-family: Ashley3;
+    font-weight:bold;
+    font-size:large;
+    color:rgb(106, 9, 203);
+    text-align:center;
+}
+p{
+    font-family:Ashley;
+    font-weight:bolder;
+    font-size:large;
+    padding:10px;
+    margin:20px;
+    text-align:center;
+}
+ul{
+    list-style-type: square;
+    list-style-position: inside;
+    text-align: center;
+    font-family: Ashley2;
+    text-shadow: 3px 3px 10px rgb(79, 0, 149);
+    padding:5px;
+}
+div.polaroid{
+        width: 25%;
+        background-color: white;
+        border-color:black;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+        display:block;
+        margin:35px;
+        float:left;
+      }
+
+div.desc{
+    padding: 10px 20px;
+    text-align:center;
+
+}
+footer{
+    overflow:auto;
+    border:none;
+    margin:10px;
+    padding:10px;
+    text-align:center;
+}
+div.footer{
+    width:100px;
+    margin:5px;
+    border:1px rgb(153, 148, 148);
+    border-radius:2px;
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    padding:5px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    box-shadow:5px 5px
+
+    
+}
