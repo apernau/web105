@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../HTML-Forms/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../Advanced-Formatting/images/favicon.ico">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Best Friend Application</h1>
+
+        <form>
+            <h2>Who Are You</h2>
+            <label for="fname"> First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="First"
+            pattern="[A-Z] {1} [A-Z] {1}"required autofocus><br>
+            <label for="lname"> Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Last"
+            pattern="[A-Z] {1} [A-Z] {1}" required autofocus><br>
+            </form>
+            
+            <form action="/action_page.php">
+                <h2>Preferences</h2>
+                <input type="checkbox" id="pref1" name="pref1" value="Marvel">
+                <label for="pref1"> Marvel</label><br>
+                <input type="checkbox" id="pref2" name="pref2" value="DC">
+                <label for="pref2"> DC</label><br>
+                <input type="checkbox" id="pref3" name="pref3" value="HarryPotter">
+                <label for="pref3"> Harry Potter</label><br>
+                <input type="checkbox" id="pref4" name="pref4" value="StarWars">
+                <label for="pref4"> Star Wars</label><br>
+                <input type="checkbox" id="pref5" name="pref5" value="IndianaJones">
+                <label for="pref5">Indiana Jones</label><br>
+                <input type="checkbox" id="pref6" name="pref6" value="Ghostbusters">
+                <label for="pref6"> Ghostbusters</label><br>
+                <input type="checkbox" id="pref7" name="pref7" value="Halloween">
+                <label for="pref7"> Halloween</label><br>
+                <input type="checkbox" id="pref8" name="pref8" value="FridayThe13th">
+                <label for="pref8"> Friday the 13th</label><br><br>
+                </form>
+            <form>
+                <h2>Social Media</h2>
+                <h2>choose your preferred social</h2>
+                <select id="SocialMedia" name="SocialMedia">
+                    <option value="FB">Facebook</option>
+                    <option value="IG">Instagram</option>
+                    <option value="SNAP">Snapchat</option>
+                    <option value="THREADS">Threads</option>
+                    <option value="X">X, Formerly Twitter</option>
+                    </select>
+            </form>
+           <form>
+                <h2>Pizza</h2>
+                  <input type="radio" id="deepdish" name="fav_pizza" value="deep">
+                  <label for="deep">Deep Dish</label><br>
+                  <input type="radio" id="thin" name="fav_pizza" value="thin">
+                  <label for="thin">Thin Crust</label><br>
+             </form> 
+             <form action="/action_page.php">
+                <textarea name="message" rows="10" cols="30">Tell me more about your hobbies.</textarea>
+                <br><br>
+                <input type="submit">
+              </form>
+        </form>
+    </div>
+</body>
+</html>
