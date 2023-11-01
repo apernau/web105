@@ -1,0 +1,35 @@
+body {
+    background:darkgrey;
+}
+container {
+    width: 70%;
+    margin: 10px auto;
+}
+h1 {
+color:darkorchid;
+text-align:left;
+}
+h2 {
+    color:darkmagenta;
+    text-align:left;
+}
+ul {
+    list-style-type:disc;
+}
+ul ul {
+    list-style-type:square;
+}
+ol {
+    list-style-type:numeric;
+}
+ol ol {
+    list-style-type:lower-alpha;
+}
+dt {
+    color:floralwhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+dd {
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

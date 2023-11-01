@@ -1,0 +1,30 @@
+body {
+    background:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color:ivory; 
+}
+nav, h1{
+    text-align:center;
+}
+ nav a{
+        font-size:larger;
+        color:black;
+        padding: 10px 20px;
+        background-color: #700ac0;
+        font-weight:bold;
+        text-decoration:none;
+        margin-left:30px;
+        border-radius:20px;
+        border: 2px solid #700ac0;
+     
+        
+}
+
+nav a:hover{
+    color:antiquewhite;
+    background:black;
+}
+a{
+ color: #700ac0;
+ font-size:x-large;
+}

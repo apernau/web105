@@ -1,0 +1,47 @@
+/* ---------------------- layout ------------------------- */
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 1.2em;
+    background-color: rgb(14, 14, 2);
+    color: rgb(226, 11, 11);
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    min-width: 500px;
+    margin: 20px auto;
+    overflow: auto;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    min-height: 80px;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(247, 241, 241);
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    color: rgb(247, 241, 241);
+}
+
+img{
+    display: block;
+    margin: 10px auto;
+}
