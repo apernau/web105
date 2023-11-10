@@ -57,6 +57,21 @@ body{
     padding:10px;
 
 }
+nav a{
+    font-size:large;
+    margin:20px;
+    color:rgb(6, 6, 6);
+    padding: 0px 10px;
+    background-color: var(--accent-color);
+    text-decoration:none;
+    border-radius:none;
+    text-align:center;
+}
+
+nav a:hover, #current{
+background: var(--dark-primary-color);
+color: var(--accent-color);
+}
 #front-main{
     float: left;
     width: 70%;
@@ -91,7 +106,7 @@ figure{
 }
 h1, h2, h3, nav{
     text-align:center;
-    margin:10px auto;
+    margin: 10px auto;
 }
 h1{
     font-family: var(--heading-font);
@@ -159,23 +174,6 @@ ul{
     padding:1px;
 }
 
-nav a{
-        font-size:larger;
-        font-weight:bold;
-        margin:20px;
-        color:rgb(6, 6, 6);
-        padding: 5px 10px;
-        background-color: var(--accent-color);
-        text-decoration:none;
-        border-radius:10px;
-        border: 2px solid var(--divider-color); 
-        text-align:center;
-}
-
-nav a:hover, #current{
-    background: var(--dark-primary-color);
-    color: var(--accent-color);
-}
 footer{
     overflow:auto;
     border:none;
