@@ -1,13 +1,65 @@
 body{
-    background-color: black;
+    background-color: rgb(131, 127, 127);
 }
 
 .container-fluid{
     width: 90%;
     margin: 10px auto;
-    background-color: darkgray;
+    background-color: rgb(131, 127, 127);
+}
+.container-fluid-1{
+    width: 90%;
+    margin: 10px auto;
+    background-color: rgb(131, 127, 127);
+}
+.card{
+    width: 90%;
+    margin: auto;
+    color:rgb(9, 63, 211);
+    background-color: rgb(131, 127, 127);
+    border-color: rgb(9, 63, 211);
+}
+.carousel{
+    display:block; 
+    width:90%;
+    margin:auto;
 }
 
+nav.justify-content-center{
+    font-size:large;
+    margin:20px auto;
+    color:rgb(9, 63, 211);
+    padding: 0px 10px;
+    background-color: rgb(131, 127, 127);
+    text-decoration:none;
+    border-radius:none;
+    text-align:center;
+}
+
+nav .justify :hover, #current{
+background: rgb(9, 63, 211);
+color: rgb(131, 127, 127);
+}
+.offcanvas-body{
+    color:rgb(9, 63, 211);
+    background-color:rgb(131, 127, 127);
+}
+img{
+    width:90%;
+    margin: 10px auto;
+}
+h1{
+    color:rgb(9, 63, 211);
+    text-align: center;
+}
+h2{
+    color: rgb(9, 63, 211);
+    text-align: center;
+}
+h3{
+    color:black;
+    text-align: center;
+}
 
 .display-1{
     text-align: center;
@@ -21,4 +73,9 @@ body{
 }
 P.text-primary{
     text-align:center;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+
 }

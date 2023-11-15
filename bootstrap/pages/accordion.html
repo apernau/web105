@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Accordion Collapsible</title>
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Initialize tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+    </script>
+
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Index</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/tables.html">Tables</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/images.html">Images</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/jumbotron.html">Jumbotron</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../pages/tooltip.html">ToolTip</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/offcanvas.html">OffCanvas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/accordion.html" id="current">Accordion Collapsible</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/carousel.html">Carousel</a>
+          </li>
+      </ul>
+    <div class="container mt-3">
+        <h2>Accordion Collapsible</h2>
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+          One
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+        Two
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+          Three
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <p class="text-primary">
+                ~Sugar, Spice, and Everything Nice~
+            </p>
+        </div>
+    </div>
+</body>
+</html>
