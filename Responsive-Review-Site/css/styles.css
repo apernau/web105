@@ -34,14 +34,14 @@ q:before, q:after {
 }
 
 :root{
-    --dark-primary-color:#1B264F;
-    --light-primary-color:#576CA8;
-    --primary-color:#F5F3F5;
-    --text-icons:#274690;
-    --accent-color:#6D72C3;
-    --primary-text:#ACB0BD;
-    --secondary-text:#D0CDD7;
-    --divider-color:#5DB7DE;
+    --dark-primary-color:#2b1f84;
+    --light-primary-color:#352491;
+    --primary-color:#143642;
+    --text-icons:#000000;
+    --accent-color:#078dd5;
+    --primary-text:#000000;
+    --secondary-text:#628395;
+    --divider-color:#040404;
     --heading-font:'Alegreya Sans SC', sans-serif;
     --text-font:'Gruppo', sans-serif;
     --secondary-text-font:'Ubuntu Condensed', sans-serif;
@@ -51,36 +51,46 @@ q:before, q:after {
     overflow:auto;
 }
 body{
-    background: var(--dark-primary-color);
-    color:var(--primary-text);
-    font-family: var(--text-font);
+    background: var(--primary-text);
+    color:var(--primary-color);
+    font-family: var(--heading-font);
     padding:10px;
 }
 .container-fluid{
     width: 90%;
     margin: 10px auto;
-    background-color:var(--text-icons);
+    background-color:var(--accent-color);
+    border-radius: 40px;
+    border: var(--primary-color);
+    border-style:groove;
 }
 .container-fluid-1{
     width: 90%;
     margin: 10px auto;
-    background-color: var(--accent-color);
+    background-color: var(--divider-color);
+}
+.container .tab-pane.active{
+    background-color:var(--primary-color);
 }
 .card{
     width: 35%;
     margin: 10px auto;
-    color:var(--accent-color);
-    background-color: var(--dark-primary-color);
+    color:var(--primary-color);
+    background-color: var(--accent-color);
     border-color:var(--divider-color);
+    border-style: solid;
+    border-radius: 20px;
 }
 .card-title{
     text-align: center;
-    font-size:  20px;
-    text-decoration: solid;
+    font-size:  30px;
+    text-decoration:underline;
 }
 .card-text{
-    text-align:center;
-    font-size:15px;
+    color:var(--divider-color);
+    text-align:left;
+    font-weight: 20px;
+    font-size:20px;
 }
 .card-img-top{
     width:70%;
@@ -98,12 +108,12 @@ body{
 
 }
 table{
-    font-family: var(--text-font);
+    font-family: var(--heading-font);
     background-color: var(--dark-primary-color);
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 table.table-hover{
-    font-family: var(--text-font);
+    font-family: var(--heading-font);
     background-color: var(--dark-primary-color);
     color: var(--accent-color);
 }
@@ -112,12 +122,12 @@ th{
     text-decoration: underline;
 }
 td{
-    font-weight:bolder;
+    font-weight:20px;
 }
 .btn{
-    background-color:var(--dark-primary-color); 
+    background-color:none; 
     border: none;
-    color: var(--light-primary-color);
+    color: var(--primary-text);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -134,37 +144,45 @@ td{
 }
 
 nav.justify-content-end{
-    font-size:large;
+    font-size:30px;
     margin:20px;
-    color:var(--dark-primary-color);
+    color:none;
     padding: 0px 10px;
-    background-color: var(--text-icons);
+    background-color: var(--primary-text);
     text-decoration:none;
     border-radius:5px;
     text-align:center;
 }
 
 nav .justify :hover, #current{
-background: var(--dark-primary-color);
-color: var(--accent-color);
+background: none;
+color: var(--text-icons);
 }
+nav .nav-tabs{
+    background-color:var(--primary-color);
+}
+
 .grid-container{
     display: grid;
     grid-template-rows: auto auto auto;
     gap:20px;
-    padding:40px;
+    padding:10px;
     width:90%;
     
 }
 .grid-container>div{
-    background-color: var(--dark-primary-color);
+    background-color: var(--divider-color);
     padding:5px;
     min-height:30px;
     width:70%;
     display: block;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--accent-color);
 }
 .grid-container>div>img{
     width:90%;
+    padding:10px;
     margin:10px auto;
     display:block;
     cursor:pointer;
@@ -172,12 +190,16 @@ color: var(--accent-color);
 
 #large{
     box-sizing: border-box;
-    padding:20px;
-    background:var(--dark-primary-color);
+    border-radius: 10px;
+    border-color: var(--accent-color);
+    border-style: double;
+    padding:10px;
+    background:var(--divider-color);
     width:40%;
     margin:10px auto;
     display:block;
 }
+
 
 img{
     width:55%;
@@ -207,35 +229,72 @@ h4{
     text-align:center;
     font-size:18px;
 }
+h5{
+    color:var(--divider-color);
+    font-size:25px;
+    font-weight:10px;
+    text-decoration: underline;
+    padding:10px;
+}
+h6{
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: bolder;
+    font-size:25px;
+    text-decoration: underline;
+}
 
 .display-1{
     text-align: center;
     border-radius:none;
+    background-color: var(--accent-color);
+    color:var(--primary-text);
+    padding:10px;
+    margin:30px;
 }
 P.text-primary{
-    text-align:center;
-    font-family: var(--text-font);
+    text-align:justify;
+    color: var(--text-icons);
+    font-family: var(--heading-font);
     font-weight:bolder;
-    font-size:large;
+    font-size:20px;
     padding:10px;
     margin:20px;
 }
 p{
-    text-align: center;
-    font-family: var(--text-font);
-    font-weight:bolder;
+    text-align: justify;
+    color: var(--primary-text);
+    font-family: var(--heading-font);
+    font-weight:20px;
     font-size: 20px;
     padding:5px;
     margin:5px;
 }
-
+p.main{
+    text-align:center;
+    color:var(--primary-text);
+    font-family:var(--heading-font);
+    font-weight:20px;
+    font-size:20px;
+    padding:5px;
+    margin:5px;
+}
+p.bottom{
+    text-align:center;
+    color:var(--accent-color);
+    font-family:var(--heading-font);
+    font-weight:20px;
+    font-size:20px;
+    padding:5px;
+    margin:5px;
+}
 dl{
     text-align: left;
-    font-family: var(--text-font);
+    font-family: var(--heading-font);
     padding:5px;
 }
 dt{
-    font-size:20px;
+    font-size:25px;
     font-weight: bolder;
     text-decoration:solid;
 }
@@ -249,10 +308,12 @@ ul{
     list-style-type: square;
     list-style-position: inside;
     text-align: left;
-    font-family: var(--text-font);
+    color:var(--primary-text);
+    font-family: var(--heading-font);
     padding:5px;
 }
 ul.specials{
+    color:var(--primary-text);
     list-style-type:none;
     list-style-position:inside;
     text-align:center;
@@ -261,11 +322,19 @@ ul.specials{
     
 }
 li{
+    color:var(--primary-text);
+    text-align: left;
     font-weight:bolder;
     text-decoration: solid;
-    padding:10px;
+    padding:15px;
 }
-
+a.nav-link{
+    color:var(--text-icons);
+    font-size:15px;
+}
+a.nav-link #active{
+    background-color: var(--secondary-text);
+}
     
 
 
